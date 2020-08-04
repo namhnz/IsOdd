@@ -15,26 +15,5 @@ function isOdd(num) {
         if (num === 3) {
             return true;
         }
-        if (num === 4) {
-            return false;
-        }
-        if (num === 5) {
-            return true;
-        }
-        if (num === 6) {
-            return false;
-        }
-        if (num === 7) {
-            return true;
-        }
-        if (num === 8) {
-            return false;
-        }
-        if (num === 9) {
-            return true;
-        }
-        if (num === 10) {
-            return false;
-        }
     }
 }
