@@ -36,5 +36,17 @@ function isOdd(num) {
         if (num === 10) {
             return false;
         }
+        if (num === 11) {
+            return true;
+        }
+        if (num === 12) {
+            return false;
+        }
+        if (num === 13) {
+            return true;
+        }
+        if (num === 14) {
+            return false;
+        }
     }
 }
