@@ -1,0 +1,31 @@
+import java.io.*;
+  
+public class Regenator {
+  
+    public static void main(String[] args) {
+  
+        try {
+  
+            FileWriter writer = new FileWriter("isOdd.txt");//code gen ra se ghi vao file text, file nay o trong cung thu muc voi code
+  
+            for( int i = min_number; i <= max_number; i++)
+            if(i % 2 == 0){
+                writer.write("        if (num === " + i + ") {" + System.getProperty("line.separator"));
+                writer.write("            return false;" + System.getProperty("line.separator"));
+                writer.write("        }" + System.getProperty("line.separator"));
+            }
+            else {
+                writer.write("        if (num === " + i + ") {" + System.getProperty("line.separator"));
+                writer.write("            return true;" + System.getProperty("line.separator"));
+                writer.write("        }" + System.getProperty("line.separator"));
+            }
+  
+            writer.close();
+  
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+  
+    }
+}
+  
